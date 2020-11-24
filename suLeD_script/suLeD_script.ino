@@ -1,4 +1,5 @@
 #include <FastLED.h>
+#include <WiFi.h>
 #define NUM_LEDS 60
 #define DATA_PIN 2
 
@@ -33,3 +34,5 @@ void RunningLights(byte red, byte green, byte blue, int WaveDelay) {
       delay(WaveDelay);
   }
 }
+
+void 
