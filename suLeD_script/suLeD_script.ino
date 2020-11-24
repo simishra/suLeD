@@ -5,6 +5,8 @@
 
 CRGB leds[NUM_LEDS];
 int ledPin = 2;
+const char* ssid = "samplessid";
+const char* pw =  "samplepw";
 
 void setup() {
   // put your setup code here, to run once:
@@ -16,6 +18,15 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(ledPin, HIGH);
+}
+
+void initWiFi(){
+  WiFi.begin(ssid, pw);
+  while (WiFi.status() != WL_CONNECTED){
+    delay(1000);
+    Serial.println("not connected");
+  }
+  Serial.println("connected");
 }
 
 void RunningLights(byte red, byte green, byte blue, int WaveDelay) {
