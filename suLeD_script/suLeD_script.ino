@@ -7,6 +7,8 @@ CRGB leds[NUM_LEDS];
 int ledPin = 2;
 const char* ssid = "samplessid";
 const char* pw =  "samplepw";
+const int ESPPort = 23; //Telnet
+WiFiServer Server(ESPPort);
 
 void setup() {
   // put your setup code here, to run once:
@@ -27,6 +29,10 @@ void initWiFi(){
     Serial.println("not connected");
   }
   Serial.println("connected");
+}
+
+void setupServer(){
+  Server.begin();
 }
 
 void RunningLights(byte red, byte green, byte blue, int WaveDelay) {
