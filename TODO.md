@@ -2,6 +2,6 @@
 
 ## Microcontroller Code
 ### LEDs
-## Webserver
+## Webserver esp32 als server, der im wlan an steuerbar ist. 
 ### GET requests?
 ## Android App?
