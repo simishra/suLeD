@@ -1,8 +1,3 @@
-#include <FastLED.h>
-#define NUM_LEDS 60
-#define DATA_PIN 2
-
-
 void showStrip() {
  #ifdef ADAFRUIT_NEOPIXEL_H
    // NeoPixel
