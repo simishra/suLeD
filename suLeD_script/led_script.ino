@@ -45,4 +45,166 @@ void RunningLights(byte red, byte green, byte blue, int WaveDelay) {
       delay(WaveDelay);
   }
 }
+
+void kurz(){
+  digitalWrite(ledPin, HIGH);
+  delay(500);
+  digitalWrite(ledPin, LOW);
+  delay(500);
+}
+void lang(){
+  digitalWrite(ledPin, HIGH);
+  delay(1500);
+  digitalWrite(ledPin, LOW);
+  delay(500);
+}
+
+void morse(){
+  char str[] = "SOS";
+  char alpha[] ="ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
+  char alphal[] ="abcdefghijklmnopqrstuvwxyz";
+  for(int i=0; i<3; i++){
+   
+    if(str[i] == alpha[0]|| alphal[0]){
+        kurz();
+        lang();
+    }
+    if(str[i] == alpha[1]|| alphal[1]){
+        lang();
+        kurz();
+        kurz();
+        kurz();
+    }
+    if(str[i] == alpha[2]|| alphal[2]){
+        lang();
+        kurz();
+        lang();
+        kurz();
+    }
+    if(str[i] == alpha[3]|| alphal[3]){
+        lang();
+        kurz();
+        kurz();
+    }
+    if(str[i] == alpha[4]|| alphal[4]){
+        kurz();
+    }
+    if(str[i] == alpha[5]|| alphal[5]){
+        kurz();
+        kurz();
+        lang();
+        kurz();
+    }
+    if(str[i] == alpha[6]|| alphal[6]){
+        lang();
+        lang();
+        kurz();
+    }
+    if(str[i] == alpha[7]|| alphal[7]){
+        kurz();
+        kurz();
+        kurz();
+        kurz();
+    }
+    if(str[i] == alpha[8]|| alphal[8]){
+        kurz();
+        kurz();
+    }
+    if(str[i] == alpha[9]|| alphal[9]){
+        kurz();
+        lang();
+        lang();
+        lang();
+    }
+    if(str[i] == alpha[10]|| alphal[10]){
+        lang();
+        kurz();
+        lang();
+    }
+    if(str[i] == alpha[11]|| alphal[11]){
+        kurz();
+        lang();
+        kurz();
+        kurz();
+    }
+    if(str[i] == alpha[12]|| alphal[12]){
+        lang();
+        lang();
+    }
+    if(str[i] == alpha[13]|| alphal[13]){
+        lang();
+        kurz();
+    }
+    if(str[i] == alpha[14]|| alphal[14]){
+        lang();
+        lang();
+        lang();
+    }
+    if(str[i] == alpha[15]|| alphal[15]){
+        kurz();
+        lang();
+        lang();
+        kurz();
+    }
+    if(str[i] == alpha[16]|| alphal[16]){
+        lang();
+        lang();
+        kurz();
+        lang();
+    }
+    if(str[i] == alpha[17]|| alphal[17]){
+        kurz();
+        lang();
+        kurz();
+    }
+    if(str[i] == alpha[18]|| alphal[18]){
+        kurz();
+        kurz();
+        kurz();
+    }
+    if(str[i] == alpha[19]|| alphal[19]){
+        lang();
+    }
+    if(str[i] == alpha[20]|| alphal[20]){
+        kurz();
+        kurz();
+        lang();
+    }
+    if(str[i] == alpha[21]|| alphal[21]){
+        kurz();
+        kurz();
+        kurz();
+        lang();
+    }
+    if(str[i] == alpha[22]|| alphal[22]){
+        kurz();
+        lang();
+        lang();
+    }
+    if(str[i] == alpha[23]|| alphal[23]){
+        lang();
+        kurz();
+        kurz();
+        lang();
+    }
+    if(str[i] == alpha[24]|| alphal[24]){
+        lang();
+        kurz();
+        lang();
+        lang();
+    }
+    if(str[i] == alpha[25]|| alphal[25]){
+        lang();
+        lang();
+        kurz();
+        kurz();
+    }
+    
+    
+  }
+}
+
+
+
+ 
  
