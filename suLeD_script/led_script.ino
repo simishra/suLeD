@@ -47,15 +47,19 @@ void RunningLights(byte red, byte green, byte blue, int WaveDelay) {
 }
 
 void kurz(){
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
+  setAll(128, 140, 7);
+  morse_pause();
 }
+
 void lang(){
-  digitalWrite(ledPin, HIGH);
-  delay(1500);
-  digitalWrite(ledPin, LOW);
+  setAll(128, 140, 7);
+  delay(1000);
+  morse_pause();
+}
+
+void morse_pause(){
+  delay(500);
+  setAll(0, 0, 0);
   delay(500);
 }
 

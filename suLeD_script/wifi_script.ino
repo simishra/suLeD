@@ -7,16 +7,9 @@ void initWiFi(){
   }
   Serial.println("connected");
   Serial.println("IP Address: ");
-  Serial.print(WiFi.localIP()); 
+  Serial.println(WiFi.localIP()); 
 }
 
-void setupServer(){
-  server.onNotFound(notFound);
-  server.begin();
-  server.on("/test/", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send(200, "text/html", "It worx, biatch!!!");
-  });
-}
 //void setupClient(){
 //  WiFiClient client = server.available();
 

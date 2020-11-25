@@ -16,6 +16,7 @@ AsyncWebServer server(80);
 
 void setup() {
   Serial.begin(11520);
+  Serial.println("runs");
   initWiFi();
   setupServer();
 }
