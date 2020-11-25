@@ -67,7 +67,10 @@ void morse(){
   char str[] = "SOS";
   char alpha[] ="ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
   char alphal[] ="abcdefghijklmnopqrstuvwxyz";
-  for(int i=0; i<3; i++){
+  int sizeOfArray = sizeof(str)/sizeof(int);
+  
+  for(int i=0; i<sizeOfArray; i++){
+   
    
     if(str[i] == alpha[0]|| alphal[0]){
         kurz();
